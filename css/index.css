@@ -1,8 +1,24 @@
 h1 {
-	color: red;
+	color: teal;
+	font-family: 'Trebuchet MS';
 }
 
 button {
 	background-color: green;
 	color: cyan;
+}
+
+p {
+	color: teal;
+	font-family: 'Trebuchet MS';
+}
+
+body {
+	background-color: black;
+	padding: 2%;
+}
+
+li {
+	color: teal;
+	font-family: 'Trbuchet MS';
 }
