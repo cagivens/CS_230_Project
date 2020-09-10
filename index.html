@@ -12,30 +12,6 @@
 	<image id="imageThree" src="images/sif_3.jpg" height="300"/>
 	<image id="imageFour" src="images/sif_4.jpg" height="300"/>
 	<br/>
-	<script>
-	var imageOne = document.getElementById("imageOne");
-	var imageTwo = document.getElementById("imageTwo");
-	var imageThree = document.getElementById("imageThree");
-	var imageFour = document.getElementById("imageFour");
-
-	function cycleLeft() {
-		var temp = imageOne.src;
-
-		imageOne.src = imageTwo.src;
-		imageTwo.src = imageThree.src;
-		imageThree.src = imageFour.src;
-		imageFour.src = temp;
-	}
-
-	function cycleRight() {
-		var temp = imageFour.src;
-
-		imageFour.src = imageThree.src;
-		imageThree.src = imageTwo.src;
-		imageTwo.src = imageOne.src;
-		imageOne.src = temp;
-	}
-	</script>
 	<button onclick="cycleLeft()">Cycle Left</button>
 	<button onclick="cycleRight()">Cycle Right</button>
 	<br/>
