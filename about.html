@@ -1,27 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Index</title>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/IdentityCard.css">
 </head>
-<body>
-	<object data="object/navbar.html" height="100"></object>
 
-	<h1>Lab 1</h1>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Something else here</a>
+			  </div>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</li>
+		  </ul>
+		  <form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		  </form>
+		</div>
+	  </nav>
 
 	<!--IdentityCard instance one-->
 	<div class="IdentityCard">
-		<image id="imageOne" src="images/sif_1.jpg" height="300"/>
+		<image id="imageOne" src="images/sif_1.jpg" height="300" />
 		<h3>Good Boy</h3>
 		<h6>Sif</h6>
 		<button>Contact</button>
 	</div>
-	
+
 	<!--IdentityCard instance two-->
 	<div class="IdentityCard">
-		<image id="imageTwo" src="images/sif_2.jpg" height="300"/>
+		<image id="imageTwo" src="images/sif_2.jpg" height="300" />
 		<h3>Gooder Boy</h3>
 		<h6>Sif again</h6>
 		<button>Contact</button>
@@ -29,7 +77,7 @@
 
 	<!--IdentityCard instance three-->
 	<div class="IdentityCard">
-		<image id="imageThree" src="images/sif_3.jpg" height="300"/>
+		<image id="imageThree" src="images/sif_3.jpg" height="300" />
 		<h3>Goodest Boy</h3>
 		<h6>Sif, but for a third time</h6>
 		<button>Contact</button>
@@ -37,7 +85,7 @@
 
 	<!--IdentityCard instance four-->
 	<div class="IdentityCard">
-		<image id="imageFour" src="images/sif_4.jpg" height="300"/>
+		<image id="imageFour" src="images/sif_4.jpg" height="300" />
 		<h3>Bestest Boy</h3>
 		<h6>Ultimate Sif</h6>
 		<button>Contact</button>
@@ -53,4 +101,5 @@
 		His favorite food is Greenies, but he doesn't eat them half the time. He just plays with them.
 	</p>
 </body>
+
 </html>
