@@ -14,19 +14,10 @@ p {
 }
 
 body {
-	background-color: black;
 	padding: 2%;
 }
 
 li {
 	color: teal;
 	font-family: 'Trbuchet MS';
-}
-
-.IdentityCard h3 {
-	color: teal;
-}
-
-.IdentityCard h6 {
-	color: teal;
 }
