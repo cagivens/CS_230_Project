@@ -2,3 +2,16 @@
 	float: left;
 	margin: 3%;
 }
+
+body {
+	background-image: url(../images/bg-login.jpg);
+	height: 100vh;
+	background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p, h5 {
+	color: teal;
+	font-family: Trebuchet MS;
+}
