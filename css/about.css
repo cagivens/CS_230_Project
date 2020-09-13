@@ -1,23 +1,4 @@
-h1 {
-	color: teal;
-	font-family: 'Trebuchet MS';
-}
-
-button {
-	background-color: green;
-	color: cyan;
-}
-
-p {
-	color: teal;
-	font-family: 'Trebuchet MS';
-}
-
-body {
-	padding: 2%;
-}
-
-li {
-	color: teal;
-	font-family: 'Trbuchet MS';
+.card {
+	float: left;
+	margin: 3%;
 }
