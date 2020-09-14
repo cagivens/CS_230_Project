@@ -17,6 +17,10 @@
     text-align: center;
 }
 
+.carousel {
+  width: 233px;
+}
+
 input {
     margin-bottom: 5px;
 }
