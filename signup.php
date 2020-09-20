@@ -7,7 +7,7 @@ require "includes/header.php"
         <div class="h-100 container center-me">
             <div class="my-auto">
                 <div class="signup-form">
-                    <form action="signup-helper.php" method="post">
+                    <form action="includes/signup-helper.php" method="post">
                         <h2>Register</h2>
                         <p class="hint-text">Create your account!</p>
                         <div class="form-group">
