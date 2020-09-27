@@ -42,7 +42,7 @@ require "includes/header.php"
 
     <div class="h-40 center-me">
       <div class="my-auto">
-        <form class="form-signin" style="background: white;">
+        <form class="form-signin" style="background: white;" action="includes/login-helper.php" method="post">
           <img class="mb-4" src="images/soof.jpg" alt="" width="72" height="72">
           <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
           <label for="inputEmail" class="sr-only">Email address</label>
