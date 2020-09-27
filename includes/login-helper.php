@@ -1,21 +1,20 @@
 <?php
 
-if(isset($_POST['login-submit'])) {
+if (isset($_POST['login-submit'])) {
     require 'dbhandler.php';
     $uname_email = $_POST['uname'];
     $password = $_POST['pwd'];
 
-    if(empty($uname_email) || empty($password)) {
+    if (empty($uname_email) || empty($password)) {
         header("Location: ../login.php?error=EmptyField");
         exit();
     }
 
     $sql = "SELECT * FROM users WHERE username=? OR email=?;";
     $stmt = mysqli_stmt_init($conn);
-    if(!mysqli_stmt_prepare($stmt, $sql)) {
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
         header("Location: ../login.php?error=SqlInjection");
         exit();
-
     } else {
 
         mysqli_stmt_bind_param($stmt, "ss", $uname_email, $password);
@@ -23,15 +22,14 @@ if(isset($_POST['login-submit'])) {
 
         $result = mysqli_stmt_get_result($stmt);
         $data = mysqli_fetch_assoc($result);
-        if(empty($data)) {
+        if (empty($data)) {
             header("Location: ../login.php?error=UserDNE");
             exit();
-
         } else {
 
             $pass_check = password_verify($password, $data['password']);
 
-            if($pass_check) {
+            if ($pass_check) {
                 session_start();
                 $_SESSSION['uid'] = $data['uid'];
                 $_SESSSION['fname'] = $data['fname'];
@@ -39,7 +37,6 @@ if(isset($_POST['login-submit'])) {
 
                 header("Location: ../profile.php?login=Success");
                 exit();
-
             } else {
 
                 header("Location: ../login.php?error=InvalidPassword");
@@ -47,7 +44,6 @@ if(isset($_POST['login-submit'])) {
             }
         }
     }
-
 } else {
 
     header("Location: ../login.php");
