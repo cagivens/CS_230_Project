@@ -41,6 +41,9 @@ if(isset($_POST['signup-submit'])) {
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
 
+                    $sqlImg = "INSERT INTO profile(username) VALUES('$username');";
+                    mysqli_query($conn, $sqlImg);
+
                     header("Location: ../login.html?signup=Success");
                     exit();
                 }
